@@ -33,7 +33,7 @@ class ScanThread(threading.Thread):
                 if "FTP" in version and "2.2" in version:
                     print(colored(f"[!] Vulnerabilidade detectada: FTP service version {version} is vulnerable to exploit.", "yellow"))
             except:
-                print(f"Unable to get banner and service version for port {self.port}")
+                print(f"Não foi possível obter o banner e a versão do serviço para a porta {self.port}")
             try:
                 client.send(b"GET /get_banner HTTP/1.1\r\nHost: %s\r\n\r\n")
                 response = client.recv(1024).decode("utf-8")
