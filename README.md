@@ -1,5 +1,5 @@
 # PortScan
-A simple Python-based TCP port scanner
+A simple Python-based TCP port scanner. The project was developed for educational purposes.
 
 # Primeiros Passos
 
